@@ -1,0 +1,129 @@
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  background-color: #eff7ff;
+  color: #07070a;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  width: 65%;
+  margin: 0px auto;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 24px 0px;
+}
+
+.about img {
+  border-radius: 4px;
+  width: 25%;
+  height: fit-content;
+  align-self: center;
+}
+
+.about-text {
+  width: 65%;
+}
+
+.about-text p {
+  display: flex;
+  text-align: justify;
+}
+
+.container .row.header {
+  flex: 0 1 auto;
+  justify-content: space-between;
+}
+
+.header button {
+  font-family: "Montserrat", sans-serif;
+  background-color: #eff7ff;
+  border: 2px solid #45535b;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  align-self: center;
+  padding: 6px;
+  transition: 0.3s;
+}
+
+.header button:hover {
+  cursor: pointer;
+  background-color: #45535b;
+  color: #eff7ff;
+  transition: 0.3s;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.project-list,
+.internship-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-column-gap: 24px;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+.project-description,
+.internship-description {
+  font-size: 0.7em;
+}
+
+.project,
+.internship {
+  border: 2px solid #45535b;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 24px;
+  text-align: justify;
+}
+
+.project h3,
+.internship h3 {
+  font-size: 1em;
+  color: #45535b;
+  margin: 0;
+}
+
+.project ul,
+.internship ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.project ul li,
+.internship ul li {
+  display: flex;
+}
+
+.project img,
+.internship img {
+  width: 20px;
+  padding: 0px 12px;
+}
+
+.footer {
+  width: 100vw;
+  background-color: #45535b;
+  color: #eff7ff;
+  text-align: center;
+  padding: 12px;
+  font-size: 0.8em;
+}
